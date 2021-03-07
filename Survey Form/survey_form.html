@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="stylesheet" href="survey_styling.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Libre+Barcode+39+Text&family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Open+Sans:wght@300;400&family=Vollkorn&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Libre+Caslon+Display&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Miriam+Libre:wght@400;700&family=Rhodium+Libre&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!--Container for the entire form. This is important. So that I could resize it, while keeping the settings and size for the body the same. This important if want to create a tansparent layer over the background image-->
+    <div class="container">
+        <!--Title of the form-->
+        <div id="title">
+            <h1>University Library Form</h1>
+        </div>
+        <!--The description about the form. Right under the title-->
+        <div id="description">
+            <p>Please fill out this form before borrowing a book.</p>
+        </div>
+    <!--The form area-->
+    <form id="survey-form" class="the-survey-form">
+        <!--Before starting you need to create a div, that will target each and every element of the form individually, but can be called once and all the changes you target at that form will affect those pieces of the form individually. The class will be called: form-edit-indi-->
+
+        <!--For every input we will need to add something that will organize the spaces and the area people are going to use in order to actually type in their results. That class will be called form-org-->
+
+        <!--For radio, and checkbox you will need the names to match, but no need for ids for the label itself. Though the for is important inorder to differentiate the choices for sure-->
+
+        
+        <!--Below is the field where you are going to enter your first-name and last name.-->
+        <div class="form-edit-indi" >
+            <label id="name-label" for="name"> First and Last Name</label>
+            <input type="text" name="name" id="name" class="form-org" placeholder="Enter Your First Name and Last Name" required />
+        </div>
+
+       
+        <!--Creating The age-->
+        <div class="form-edit-indi">
+            <label id="number-label" for="age">Age</label>
+            <input class="form-org" type="number" name="age" id="age" placeholder="Enter Your Name last-name" min="18" max="99" required />
+        </div>
+
+        <!--Below is the area you are going to enter your student ID-->
+        <div class="form-edit-indi ">
+            <label id="student-id-label" for="student-id">Student ID Number</label>
+            <input class="form-org" type="text" name="student-id" id="student-id" placeholder="Student-ID Number" required>
+        </div>
+
+        <!--Selecting the faculty of the student-->
+        <div class="form-edit-indi ">
+            <p>Please Select Your Faculty</p>
+            <select class="form-org" name="faculty" id="dropdown" required>
+                <option disabled selected value="">Select your current faculty</option>
+                <option value="foe">Faculty Of Engineering</option>
+                <option value="fom">Faculty Of Managment</option>
+                <option value="fIT">Faculty Of IT</option>
+                <option value="fcm">Faculty Of Creative Multimedia</option>
+                <option value="foa">Faculty Of Art</option>
+            </select>
+        </div>
+
+        <!--Entering the books name and serial Number-->
+        <div class="form-edit-indi">
+            <label id="book-name-label" for="book-name">Book Name</label>
+            <input class="form-org" type="text" name="book-name" id="book-name" placeholder="Book Name" required />
+        </div>
+
+        <div class="form-edit-indi">
+            <label id="serial-number-label" for="serial-number">Book's Serial Number</label>
+            <input class="form-org" type="text" name="serial-number" id="serial-number" placeholder="Book's serial number" required />
+        </div>
+        
+
+        <!--Entering the contact number of the student-->
+        <div class="form-edit-indi form-edit-indi1">
+            <label id="contact-no-label" for="contact-no">Contact Number</label>
+            <input class="form-org" type="text" name="contact-no" id="contact-no" placeholder="Please enter your phone number" required />
+        </div>
+
+        <!--Entering the borrowing date, start and end.-->
+        <div class="form-edit-indi form-edit-indi1">
+            <label id="start-date-label" for="start-date">Brow Date</label>
+            <input class="form-org" type="date" name="start-date" id="start-date" required />
+        </div>
+
+        <div class="form-edit-indi">
+            <label id="end-date-label" for="end-date">Return Date</label>
+            <input class="form-org" type="date" name="end-date" id="end-date" required />
+        </div>
+
+        <!--Below is the area where you are going to enter your email-->
+        <div class="form-edit-indi">
+            <label id="email-label" for="email">Student Email</label>
+            <input class="form-org" type="email" name="email" id="email" placeholder="Student Email" required />
+        </div>
+
+        <!--Understanding the terms and conditions-->
+        <div class="form-edit-indi">
+            <p>Do you understand that extra charges of RM 20 per hour will be charged on your borrowing if you don't return the book on time?</p>
+            <label>
+                 <input type="radio" name="return-ontime" value="i-Understand" class="radio-input" checked /> I Understand.
+            </label>
+            <label>
+                <input type="radio" name="return-ontime" value="not-understand" class="radio-input" /> I don't Understand.
+            </label>
+        </div>
+
+        <div class="form-edit-indi">
+            <p>Do you understand that extra charges of RM 100 per page will be charged on your borrowing if the book is damaged? </p>
+            <label>
+                <input type="radio" name="return-book" value="i-Understand" checked class="radio-input"/> I Understand.
+            </label>
+
+            <label>
+                <input type="radio" name="return-book" value="not-understand" class="radio-input" /> I don't Understand.
+            </label>
+        </div>
+
+        <!-- Reasons for borrowing the book-->
+        <div class="form-edit-indi">
+            <p>What is your reason for borrowing your current book? Note this feedback is sent anonymously to the book's author. <span>(Select All That Applies)</span></p>
+            <label>
+                <input type="checkbox" name="why-borrow" value="educational" class="checkbox-input"/>
+                For educaitonal purposes.
+            </label>
+
+            <label>
+                <input type="checkbox" name="why-borrow" value="lectural recommendation" class="checkbox-input"/>
+                Lecture's recommendation.
+            </label>
+
+            <label>
+                <input type="checkbox" name="why-borrow" value="to-read-purchase" class="checkbox-input" />
+                To read it before purchasing it.
+            </label>
+
+            <label>
+                <input type="checkbox" name="why-borrow" value="expand-knowledge-score" class="checkbox-input" />
+                To expand my knowledge, to improve my score.
+            </label>
+
+            <label>
+                <input type="checkbox" name="why-borrow" value="self-improve" class="checkbox-input" />
+                To advance my personal skills.
+            </label>
+
+            <label>
+                <input type="checkbox" name="why-borrow" value="exam-prep" class="checkbox-input" />
+                To prepare for exam, only.
+            </label>
+        </div>
+
+
+        <!--Note Span is actually used in order to create a random div, however, thing with that is that, DIV causes a line break, while span doesn't. So if you want to use something link div, but without line breaker use span-->
+
+        <!-- Area for suggestions and to improve-->
+        <div class="form-edit-indi">
+            <p>Any comments or suggestions that will help us improve our library? Have you noticed anything suspious in the library? Please feel free to let us know your thoughts. In case you are going to report anything, rest asured your anonymity will be kept safe.</p> 
+
+            <textarea name="comments" id="comments" placeholder="enter your suggestions here..."></textarea>
+        </div>
+
+        <!--Area for the submit button-->
+        <div class="form-edit-indi form-edit">
+            <button type="submit" id="submit">Submit Form</button>
+        </div>
+
+
+        
+
+
+        
+
+    </form>
+    </div>
+
+</body>
+</html>
