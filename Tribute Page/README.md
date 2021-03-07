@@ -1,5 +1,16 @@
-This is the tribute page challange folder. What you will see here is the HTML, CSS, and JS files used in order to create the tribute page. 
-The code used here is actually posted on my codepen.io page. Please follow, share, like, comment, and let me know if there are things you want me to improve at. 
+This is the tribute page challange folder. What you will see here are the 
+The following are included in this folder:
+1) HTML file of the tribute page. 
+2) The CSS file of the tribute page.
+3) The JS (JavaScript) files of the tribute page.
+
+Feel free to fork, share, download, and use these files.
+
+If there are any errors in my code, or improvements that should be done, please feel free to tell me about them, and teach me. 
+
+If you also want to help me improve, and teach me free tips and tricks, I will be glad to receive guidance. 
+Thanks before hand. 
+
 To follow me on codepen.io:
 @ibrahim_dev_man
 
@@ -13,9 +24,8 @@ To follow me on Github:
 ibra-san
 
 
-I am new into web development so any help and suggestions will be greatly appreciated. 
+Other Social media accounts will be created shortly. 
+Please feel free to reach out to me, and connect, I will be happy to talk and learn more. 
 
-Hope you have a good day, and happy coding. 
 Sincerely, 
-
-Ibrahim San.
+Ibrahim Dev San.
