@@ -1,4 +1,4 @@
-As mentioned in the description these repo will contain all the challenges in freecodecamp (As many as I could do).
+As mentioned in the description of this repo these repo will contain all the challenges in freecodecamp (As many as I could do).
 So far the challenges that have been completed are: 
 1) Responsive Web Design:
     (a) Tribute Page. 
