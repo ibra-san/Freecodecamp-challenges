@@ -1,0 +1,193 @@
+/*Fonts to use in your code. List below: 
+font-family: 'Arvo', serif;
+font-family: 'Libre Barcode 39 Text', cursive;
+font-family: 'Mulish', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Vollkorn', serif;
+
+
+font-family: 'Averia Libre', cursive;
+font-family: 'Averia Serif Libre', cursive;
+font-family: 'Libre Caslon Display', serif;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Miriam Libre', sans-serif;
+font-family: 'Rhodium Libre', serif;
+*/
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #031515;
+    color: white;
+}
+.main{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#title{ 
+    font-family: 'Libre Barcode 39 Text', cursive;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#img-div{ 
+    font-family: 'Libre Barcode 39 Text', cursive;
+    text-align: center;
+    font-size: 2rem;
+    width: auto;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+    
+    #img-div{ 
+        font-family: 'Averia Libre', cursive;
+        text-align: center;
+        font-size: 1rem;
+        width: auto;
+        height: 100%;
+        padding: 20px;
+    }
+
+} 
+
+ 
+
+
+.nav-bar{ 
+    padding-top: 10px;
+    border: 5px solid black;
+    background-color: black;
+    width: 100%;
+
+}
+
+
+#nav-info{ 
+    font-family: 'Averia Libre', cursive;
+    font-weight: 200;
+    font-variant: small-caps;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.tabs-years{ 
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+    list-style: none;
+}
+
+
+.years{ 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+    width: 7%;
+    padding: 2%;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Libre Barcode 39 Text', cursive;
+}
+
+@media only screen and (max-width: 960px){
+
+    .years{ 
+        
+        font-size: 1rem;
+        text-align: center;
+        font-family: 'Averia Libre', cursive;
+    }
+
+}
+
+@media only screen and (max-width: 960px){
+
+    .years{ 
+        
+        font-size: 0.7rem;
+        text-align: center;
+        font-family: 'Averia Libre', cursive;
+    }
+
+}
+
+[data-tab-content] { 
+    display: none;
+}
+
+.active[data-tab-content] { 
+    display: block;
+}
+
+.years:hover{ 
+    background-color: rgb(97, 0, 0);
+    cursor: pointer;
+}
+
+.years.active{ 
+    background-color: darkgray;
+}
+
+.card { 
+    display: flex;
+    flex-direction: column;
+    padding-top:1rem ;
+    background-color: black;
+    width: 100%;
+}
+
+.header_content, .para-content{ 
+    background-color: black;
+    color:whitesmoke;
+    
+}
+
+.header_content{ 
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 4rem;
+    color:whitesmoke;
+
+}
+
+.para-content{ 
+    display: flex;
+    flex-direction: column;
+    font-family: 'Averia Libre', cursive;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding:5% ;
+}
+
+#y_end{ 
+    width:100%;
+}
+
+#tribute-link{ 
+    background-color: black;
+}
+
+
+
+ img{ 
+    width: 100%;
+    align-self: center;
+}
+
+
+
+#img_caption { 
+    font-family:'Libre Barcode 39 Text', cursive; 
+    font-size: 2rem;
+}
+
+
