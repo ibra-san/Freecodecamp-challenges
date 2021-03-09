@@ -13,3 +13,111 @@ font-family: 'Libre Franklin', sans-serif;
 font-family: 'Miriam Libre', sans-serif;
 font-family: 'Rhodium Libre', serif;
 */
+
+body{ 
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: 'Libre Franklin', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    
+    
+}
+
+header{ 
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: -1%;
+   
+}
+
+.logo{ 
+    width: auto;
+}
+
+#header-img{ 
+    width: 10%;
+    padding-top:2% ;
+    padding-left: 1%;
+}
+
+ul{ 
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    padding: 2%;
+    margin-right: 10%;
+}
+
+.nav-link{ 
+    list-style: none;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.cards-container{ 
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+}
+
+
+.cards{ 
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 1rem;
+   
+
+}
+
+.cards-img{ 
+    width: 10%;
+    height: auto;
+    padding: 2%;
+    
+}
+
+.cards-img, .cards-title, .cards-para{ 
+    align-self: center;
+
+}
+
+.content-container{ 
+    display: flex;
+    flex-direction: column;
+    padding-right:2% ;
+    padding-left:2% ;
+    border-left: 3px solid rgba(0, 0, 0);
+
+}
+
+#nokia-3310{ 
+    
+    margin: 1%;
+    margin-bottom: 3%;
+    align-self: center;
+  
+}
+
+.product{ 
+    
+}
+
