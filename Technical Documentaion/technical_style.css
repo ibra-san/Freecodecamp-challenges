@@ -13,3 +13,166 @@ font-family: 'Libre Franklin', sans-serif;
 font-family: 'Miriam Libre', sans-serif;
 font-family: 'Rhodium Libre', serif;
 */
+
+@media only screen and (min-width: 1000px){ 
+
+    body{ 
+        color: black;
+        font-family: 'Libre Franklin', sans-serif;
+        background-color: white;
+        line-height: 1.3;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #navbar{ 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100%; 
+        border-right: solid;
+        border-color: white; 
+        background-color: black; 
+        
+    }
+    
+    .nav-header{ 
+        color: white;
+        margin: 9px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    header{
+        color: black;
+    }
+    
+    #main-doc header{ 
+        text-align: left;
+        margin: 0;
+    }
+    
+    .nav-bar-content {
+        padding: 0;
+    }
+    
+    .nav-link{
+    
+        display: block;
+        padding: 21px;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        margin: 1px;
+        background:rgba(255, 255, 255, 0.5);
+        font-size: 1rem;
+        
+      }
+    
+    .nav-link:hover{ 
+        background: darkred;
+    } 
+    
+    
+      #main-doc {
+        position: absolute;
+        left: 22%;
+        padding: 25px;
+        padding-top: 0;
+        margin-bottom: 110px;
+        font-size: 1.3rem;
+      }
+    
+    
+    
+      code{ 
+        background: rgba(254, 255, 180, 0.849);
+      }
+}
+
+
+  @media only screen and (max-width:1000px) {
+    
+    body{ 
+        color: black;
+        font-family: 'Libre Franklin', sans-serif;
+        background-color: white;
+        line-height: 1.3;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #navbar{ 
+        margin: 0;
+        width: 100%;
+        overflow-y: scroll;
+        border-right: solid;
+        border-color: white; 
+        background-color: black; 
+        
+    }
+    
+    .nav-header{ 
+        color: white;
+        margin-top: 9px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    header{
+        color: black;
+    }
+    
+    #main-doc header{ 
+        text-align: left;
+        margin: 0;
+    }
+    
+    .nav-bar-content {
+        padding: 0;
+    }
+    
+    .nav-link{
+    
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        margin-bottom: 2px;
+        background:rgba(255, 255, 255, 0.5);
+        font-size: 1rem;
+        
+      }
+    
+    .nav-link:hover{ 
+        background: darkred;
+    } 
+    
+    
+      #main-doc {
+        display: flex;
+        flex-direction: column;
+        margin-top:1%;
+        max-width: 100%;
+        padding-top: 0;
+        margin-bottom: 110px;
+        padding-left: 2%;
+        overflow-x: hidden;
+      }
+    
+    
+      code{ 
+        background: rgba(254, 255, 180, 0.849);
+      }    
+
+
+      img{ 
+          width:90%;
+          align-content: center;
+          justify-content: center;
+      }
+
+
+}

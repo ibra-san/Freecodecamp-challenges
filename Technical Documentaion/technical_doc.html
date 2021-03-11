@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=.5, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes">
     <title>C Language Document</title>
 
     <link rel="stylesheet" href="technical_style.css">
@@ -20,8 +21,8 @@
 <body>
     <!--Below is the vertical nav-bar of the page. Its going to be on the left of the screen-->
     <nav id="navbar">
-        <header>C Language Document</header>
-        <ul>
+        <header class="nav-header">C Language Document</header>
+        <ul class="nav-bar-content">
             <li><a class="nav-link" href="#C_Keywords_&_Identifiers">C Keywords & Identifiers</a></li>
 
             <li><a class="nav-link" href="#C_Variables_&Constants">C Variables & Constants</a></li>
@@ -30,7 +31,7 @@
 
             <li><a class="nav-link" href="#C_Input_Output_(I/O)">C Input Output (I/O)</a></li>
 
-            <li><a class="nav-link" href="#C_Programming_Operators">C Programming Operators</a></li>s
+            <li><a class="nav-link" href="#C_Programming_Operators">C Programming Operators</a></li>
 
             <li><a class="nav-link" href="#Reference">Reference</a></li>
         </ul>
@@ -69,25 +70,25 @@
                 <h2>C Keywords</h2>
                     <p>Keywords are predefined, reserved words used in programming that have special meanings to the compiler. Keywords are part of the syntax and they cannot be used as an identifier. For example: <br /> 
 
-                        <pre>
-                            int money;
-                        </pre> 
+                        <code id="coding"> <br>
+                            int money; <br>
+                        </code> 
                         
                         Here, <code>int</code>  is a keyword that indicates <code>money</code>  is a variable of type <code>int</code>  (integer).
         
                         As C is a case sensitive language, all keywords must be written in lowercase. Here is a list of all keywords allowed in ANSI C. <br />
                         <img src="https://todaytutorials.com/wp-content/uploads/2020/03/C-Keyword.png" alt="C Keywords"> 
-                        <br> All these keywords, their syntax, and application will be discussed in their respective topics. However, if you want a brief overview of these keywords without going further, visit List of all <a href="https://www.programiz.com/c-programming/list-all-keywords-c-language">keywords in C programming.</a>
+                        <br> All these keywords, their syntax, and application will be discussed in their respective topics. However, if you want a brief overview of these keywords without going further, visit List of all <a class="a-link" href="https://www.programiz.com/c-programming/list-all-keywords-c-language">keywords in C programming.</a>
                     </p>    
                 
                     <hr>    
                 <h2>C Identifiers</h2>
                     <p>
                         Identifier refers to name given to entities such as variables, functions, structures etc. <br> <br> Identifiers must be unique. They are created to give a unique name to an entity to identify it during the execution of the program. For example: <br>
-                        <pre>
-                            int money;
-                            double accountBalance;
-                        </pre>
+                        <code id="coding"> <br>
+                            int money; <br>
+                            double accountBalance; <br>
+                        </code>
                     </p>
 
                     <p>
@@ -123,19 +124,19 @@
             <h2>Variables</h2>
                 <p>
                     In programming, a variable is a container (storage area) to hold data. To indicate the storage area, each variable should be given a unique name (identifier). Variable names are just the symbolic representation of a memory location. For example: <br>
-                    <pre>
-                        int playerScore = 95;
-                    </pre>
+                    <code id="coding"> <br>
+                        int playerScore = 95; <br>
+                    </code> <br>
                     <br>
                     Here, <code>playerScore</code> is a variable of <code>int</code> type. Here, the variable is assigned an integer value <code>95</code>. <br>
                     <br>
                     The value of a variable can be changed, hence the name variable. <br>
-                    <pre>
-                        char ch = 'a';
-                        // some code
-                        ch = 'l';
+                    <code id="coding"> <br>
+                        char ch = 'a'; <br>
+                        // some code <br>
+                        ch = 'l'; <br>
                         
-                    </pre>
+                    </code> <br>
                     
                 </p>
                 <hr>
@@ -153,19 +154,19 @@
                 <p>
                     C is a strongly typed language. This means that the variable type cannot be changed once it is declared. For example: 
                     <br>
-                    <pre>
+                    <code >
                        
-                            int number = 5;      // integer variable
-                            number = 5.5;        // error
-                            double number;       // error
+                            int number = 5;      // integer variable <br>
+                            number = 5.5;        // error <br>
+                            double number;       // error <br>
                     
-                    </pre>
+                    </code>
                     
                     <br>
                     <br>
                     Here, the type of <code>number</code> variable is <code>int</code>. You cannot assign a floating-point (decimal) value <code>5.5</code> to this variable. Also, you cannot redefine the data type of the variable to <code>double</code> . By the way, to store the decimal values in C, you need to declare its type to either <code>double</code>  or <code>float</code> .
                     <br>
-                    Visit this page to learn more about <a href="https://www.programiz.com/c-programming/c-data-types">different types of data a variable can store</a>.
+                    Visit this page to learn more about <a class="a-link" href="https://www.programiz.com/c-programming/c-data-types">different types of data a variable can store</a>.
                 </p>
 
             <h2>Literals</h2>
@@ -224,9 +225,9 @@
                 In this tutorial, you will learn about basic data types such as int, float, char etc. in C programming.
                 <br> <br>
                 In C programming, data types are declarations for variables. This determines the type and size of data associated with variables. For example, <br>
-                <pre>
-                    int myVar;
-                </pre>
+                <code id="coding">
+                    int myVar; <br>
+                </code>
                 <br>
                 Here, <code>myVar</code> is a variable of <code>int</code> (integer) type. The size of <code>int</code>  is 4 bytes.
             </p>
@@ -253,22 +254,22 @@
 
                 <p>
                     <h4>Example 1: C output</h4>
-                    <pre>
+                    <code id="coding">
                         
-                            #include &lt;stdio.h&gt    
-                            int main()
-                            { 
-                                // Displays the string inside quotations
-                                printf("C Programming");
-                                return 0;
-                            }
+                            #include &lt;stdio.h&gt   <br> 
+                            int main() <br>
+                            { <br>
+                                // Displays the string inside quotations  <br>
+                                printf("C Programming"); <br>
+                                return 0; <br>
+                            } <br>
                           
-                    </pre>
+                        </code>
                     
                     <h4>Output</h4>
-                    <pre>
-                        C Programming
-                    </pre>
+                    <code id="coding">
+                        C Programming <br>
+                    </code>
                 </p>
 
                 <p>
@@ -291,23 +292,23 @@
 
                 <p>
                     <h4>Example 2: Integer Input / Output</h4>
-                    <pre>
-                        #include &lt;stdio.h&gt
-                            int main()
-                            {
-                                int testInteger;
-                                printf("Enter an integer: ");
-                                scanf("%d", &testInteger);  
-                                printf("Number = %d",testInteger);
-                                return 0;
-                            }
-                    </pre>
+                    <code id="coding">
+                        #include &lt;stdio.h&gt <br>
+                            int main() <br>
+                            { <br>
+                                int testInteger; <br>
+                                printf("Enter an integer: "); <br>
+                                scanf("%d", &testInteger);  <br>
+                                printf("Number = %d",testInteger); <br>
+                                return 0; <br>
+                            } <br>
+                    </code>
 
                     <h4>Output</h4>
-                    <pre>
-                        Enter an integer: 4
-                        Number = 4
-                    </pre>
+                    <code id="coding"> <br>
+                        Enter an integer: 4 <br>
+                        Number = 4 <br>
+                    </code> <br>
 
 
                     Here, we have used %d format specifier inside the scanf() function to take int input from the user. When the user enters an integer, it is stored in the testInteger variable.
@@ -332,40 +333,40 @@
                     <br>
 
                     <h4>Example 1: Arithmetic Operators</h4>
-                    <pre>
-                        // Working of arithmetic operators
-                            #include &lt;stdio.h&gt;
-                            int main()
-                            {
-                                int a = 9,b = 4, c;
+                    <code id="coding"> <br>
+                        // Working of arithmetic operators  <br>
+                            #include &lt;stdio.h&gt; <br>
+                            int main() <br>
+                            { <br>
+                                int a = 9,b = 4, c; <br>
                                 
-                                c = a+b;
-                                printf("a+b = %d \n",c);
-                                c = a-b;
-                                printf("a-b = %d \n",c);
-                                c = a*b;
-                                printf("a*b = %d \n",c);
-                                c = a/b;
-                                printf("a/b = %d \n",c);
-                                c = a%b;
-                                printf("Remainder when a divided by b = %d \n",c);
-                                
-                                return 0;
-                            }
-                    </pre>
+                                c = a+b; <br>
+                                printf("a+b = %d \n",c); <br>
+                                c = a-b; <br>
+                                printf("a-b = %d \n",c); <br>
+                                c = a*b; <br>
+                                printf("a*b = %d \n",c); <br>
+                                c = a/b; <br> 
+                                printf("a/b = %d \n",c);v
+                                c = a%b; <br>
+                                printf("Remainder when a divided by b = %d \n",c); <br>
+                                <br>
+                                return 0; <br>
+                            } <br>
+                        </code> <br>
 
 
                     <h4>
                         Output
                     </h4>
 
-                    <pre>
-                        a+b = 13
-                        a-b = 5
-                        a*b = 36
-                        a/b = 2
-                        Remainder when a divided by b=1
-                    </pre>
+                    <code id="coding"> <br>
+                        a+b = 13 <br>
+                        a-b = 5 <br>
+                        a*b = 36 <br>
+                        a/b = 2 <br>
+                        Remainder when a divided by b=1 <br>
+                    </code>
 
 
                     The operators +, - and * computes addition, subtraction, and multiplication respectively as you might have expected.
@@ -378,23 +379,24 @@
 
                     Suppose a = 5.0, b = 2.0, c = 5 and d = 2. Then in C programming,
                     <br>
-                    <pre>
-                        // Either one of the operands is a floating-point number
-                            a/b = 2.5  
-                            a/d = 2.5  
-                            c/b = 2.5  
-
-                            // Both operands are integers
-                            c/d = 2
-
-                    </pre>
+                    <code id="coding"> <br>
+                        // Either one of the operands is a floating-point number <br>
+                            a/b = 2.5   <br>
+                            a/d = 2.5   <br>
+                            c/b = 2.5   <br>
+                            <br>
+                            // Both operands are integers <br>
+                            c/d = 2 <br>
+                    
+                    </code> <br>
                 </p>
 
         </section>
 
         <section class="main-section" id="Reference">
+            <header><h2>Reference</h2></header>
             <p>
-                All the information on this page was obtained from  <a href="https://www.programiz.com/c-programming">this website.</a>
+                All the information on this page was obtained from  <a class="a-link" href="https://www.programiz.com/c-programming">this website.</a>
             </p>
         </section>
     </main>
