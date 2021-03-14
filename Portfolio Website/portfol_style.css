@@ -14,84 +14,90 @@ font-family: 'Miriam Libre', sans-serif;
 font-family: 'Rhodium Libre', serif;
 */
 
+/*Style of the body of the page.*/
 body{ 
     padding: 0;
     margin: 0;
     display: flex; 
     flex-direction: column;
-    background-image: url("https://images.unsplash.com/photo-1554306274-f23873d9a26c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"); 
-    background-size:cover ;
+    background-color: black;
     width: 100%;
     height: 100%;
     font-family: 'Libre Franklin', sans-serif;
 }
 
+/*Styling the nav-bar*/
 #navbar{ 
-    background-color: rgb(0, 0, 0);
-    color: white;
-    display: flex;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
+    background-color: rgb(0, 0, 0); /*setting background color to black*/
+    color: white; /*setting the font color to white*/
+    display: flex; /*breaking down the nav bar into two sections.*/
+    position: fixed; /*fixing the position of the nav-bar*/
+    width: 100%; /*Setting the width of the nav to 100% of the actual screen size*/
+    z-index: 100; /*Making the nav-bar ontop of the all the objects in the page*/
+    justify-content: center; /*Centers all the contents into the middle of it*/
+    align-items: center;/*Centers all the contents into the middle of it*/
+    height: 15%;
+    
    
 }
 
+/*Controls the content of the left side of the nav bar */
 #left-side-nav{ 
-    margin-top: 1.8%;
-    font-family: 'Libre Barcode 39 Text', cursive;
-    padding: 1%;
-    width: 50%;
-
+    margin-top: 1.8%; /*Stays away from the top, by 1.8% of the size of its container*/
+    font-family: 'Libre Barcode 39 Text', cursive; /*Changing font family*/
+    padding: 1%; /*Padding the content away from its containers walls.*/
+    width: 50%; /*Width is the 50% of the container which is 50% of the length of nav-bar*/
+   
     
 }
 
-
+/*Controls the right side of the nav-bar*/
 #right-side-nav{
-    display: flex;
-    margin-right: 0.5%;
+    display: flex; /*Changes the arrangement of the list and makes them all horizontal*/
     font-family: 'Libre Franklin', sans-serif;
-    width: 50%;
-    
+    width: 50%; /*Width is the 50% of the container which is 50% of the length of nav-bar*/
+    justify-content:space-evenly; /*controls the x-axis of the content*/
+    align-items: center; /*controls the y-axis of the content*/
+
 }
 
-.nav-link{ 
-    display: flex;
-    padding: 3%;
-    margin-left: 8%;
-    
-    
-    
-    
-}
-.nav-menu-options{ 
-    list-style-type: none;
+/*Controls the link access area, and not the content of it.*/
+.nav-link{
+    padding: 1.5%;/*Controls size of the link shadow*/
     text-decoration: none;
-    padding: 0;
-    margin: 0;
-    
+    color: white;
+   
+}
+.nav-link:visited{ 
+    text-decoration: none;
+    color: white;
+}
+/*Controls the choices themselves and their styles*/
+.nav-menu-options{ 
+    list-style-type: none; /*Removes the dots of the list items*/
+    text-decoration: none; /*Removes the decorations and coloring of links*/
 }
 
-
-
+/*Controls the hover action of the links*/
 .nav-link:hover{ 
-    cursor: pointer;
-    background-color: darkred;
+    background-color: darkred; /*Once you hover over objects, the color will change red*/
 }
 
+/*Controls the home section of the page*/
 #home{ 
     width: 100%;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0,0.9);
+    top:15%;
+    position: absolute;
 }
-
 
 #welcome-title{ 
     color: white;
     position: absolute;
     top: 35%;
-    width: 99vw;
-    height: 20%;
+    width: 100%;
     font-size: 3rem;
     font-family: 'Vollkorn', serif;
 }
@@ -100,32 +106,20 @@ body{
     color: white;
     position: absolute;
     top: 50%;
-    width: 99vw;
-    height: 20%;
+    width: 100%;
     font-size: 2rem;
     font-family: 'Vollkorn', serif;
-
-}
-
-
-.nav-link{ 
-    text-decoration: none;
-    color: white;
-}
-
-.nav-link:visited{ 
-    text-decoration: none;
-    color: white;
 }
 
 #projects{ 
+    top: 115%;
     width: 100%;
     height: 100%;
     position: absolute;
     background-color: rgb(22, 0, 0);
-
     display: flex;
     flex-direction: column; 
+    
 }
 
 #project-title{ 
@@ -133,6 +127,9 @@ body{
     font-size: 2.5rem;
     color: white;
     font-family: 'Libre Franklin', sans-serif;
+    align-content: center;
+    justify-items: center;
+    margin-top: 10%;
     
 }
 
@@ -143,6 +140,7 @@ body{
     grid-template-columns: repeat(4, 20%);
     grid-template-rows: repeat(4,51%);
     justify-content: space-evenly;
+    align-items: center; 
     row-gap: 5%;
 }
 
@@ -167,15 +165,11 @@ body{
     height: inherit;
 }
 
-.cover-images{ 
-    width: inherit;
-    height: inherit;
-}
 
 .cards-para{ 
     text-align: center;
     margin: 0;
-    padding:5%;
+    padding:1.5%;
     
    
 }
@@ -185,7 +179,7 @@ body{
 
 img{ 
     border-radius: 0.5rem;
-    height: 80%;
+    height: 75%;
 }
 
 
@@ -200,30 +194,20 @@ img{
     backdrop-filter: blur(10px);
 }
 
-
-.card-links:hover{ 
-    color:white;
-}
-
-
-
-
-
 #contact{ 
     width: 100%;
     height: 110%;
     position: absolute;
     color: white;
-    top: 202.5%;
+    top: 215%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background:rgb(17, 17, 17) ;
 }
 
-#contact-tittle{ 
+#contact-title{ 
     font-size: 3rem;
     
 }
@@ -277,4 +261,87 @@ footer{
     text-align: right;
     margin:2% ;
     margin-top: 3.5%;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .cards-para{ 
+    text-align: center;
+    margin: 0;
+    padding:1.5%;
+    font-size: 2rem;
+    }
+
+    #card-container{ 
+        width: auto;
+        height: auto;
+        grid-template-columns: repeat(2, 30%);
+        grid-template-rows: repeat(2,51%);
+        
+    }
+    
+}
+
+
+@media only screen and (max-width: 419px) {
+    body{ 
+        background-color: black;
+    }
+
+    #left-side-nav{ 
+        font-size: 1rem;
+    }
+
+    #right-side-nav{
+        font-size: 0.7rem;
+    }
+
+    #welcome-title{ 
+        font-size: 2rem;
+    }
+
+    #welcome-sub{ 
+        font-size: 1rem;
+    }
+
+    #project-title{ 
+        font-size: 2rem;
+        margin-top: 30%;
+        
+    }
+
+
+
+    #card-container{ 
+        width: auto;
+        height: auto;
+        grid-template-columns: repeat(2, 30%);
+        grid-template-rows: repeat(2,51%);
+        
+    }
+    
+    .cards-para{
+        padding:1.5%;
+
+    }
+    
+    #contact-title{ 
+        font-size: 1.5rem;
+    }
+
+    
+    footer{ 
+        width: 100%;
+        height:10%;
+        position: absolute;
+        top: 320%; 
+        color: black;
+        font-family: 'Vollkorn', serif;
+        font-size: 0.7rem; 
+        background-color: white;
+    
+    
+    }
+    
+
 }
